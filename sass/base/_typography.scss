@@ -1,0 +1,12 @@
+h1 {
+  @include font(100px, 100px, 400, $font-secondary);
+  color: $col-white;
+}
+
+h2 {
+  @include font(48px, 62.7px, 400, $font-secondary);
+}
+
+p {
+  @include font(18px, 40px, 300);
+}
