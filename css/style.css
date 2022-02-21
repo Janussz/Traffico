@@ -1,24 +1,106 @@
-/* Error: Missing argument $weight.
- *   ,--> sass/base/_typography.scss
- * 15|   @include font(16px.19px, 700);
- *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> sass/util/mixin.scss
- * 1 | @mixin font($size, $line, $weight, $font: false) {
- *   |        ========================================= declaration
- *   '
- *   sass/base/_typography.scss 15:3  font()
- *   sass/base/_typography.scss 15:3  @import
- *   sass/base/_base.scss 3:9         @import
- *   sass/main.scss 2:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $weight.\a   \250c \2500 \2500 > sass/base/_typography.scss\a 15\2502    @include font(16px.19px, 700);\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass/util/mixin.scss\a 1 \2502  @mixin font($size, $line, $weight, $font: false) {\a   \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   sass/base/_typography.scss 15:3  font()\a   sass/base/_typography.scss 15:3  @import\a   sass/base/_base.scss 3:9         @import\a   sass/main.scss 2:9               root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #FEF8F5;
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/font/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/font/Rubik-Light.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/font/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/font/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/font/Rubik-Bold.ttf);
+}
+h1 {
+  font-family: "DM Serif Display";
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 400;
+  color: #402B2B;
+  color: #fff;
+}
+
+h2 {
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  line-height: 63px;
+  font-weight: 400;
+  color: #402B2B;
+}
+
+p {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #402B2B;
+}
+
+.p_nav {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #402B2B;
+  color: #fff;
+}
+
+.p_testi {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #402B2B;
+}
+
+.p_foot {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #402B2B;
+  color: #fff;
+}
+
+.p_head {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #402B2B;
+  color: #EE4D47;
+}
+
+/*# sourceMappingURL=style.css.map */

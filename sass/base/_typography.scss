@@ -12,11 +12,11 @@ p {
 }
 
 .p_nav {
-  @include font(16px.19px, 700);
-  color: $col-white;
+  @include font(16px, 19px, 700);
+  color: $col-white
 }
 
-ś .p_testi {
+.p_testi {
   @include font(16px, 30px, 300);
 }
 
