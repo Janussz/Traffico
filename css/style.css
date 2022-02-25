@@ -103,4 +103,20 @@ p {
   color: #EE4D47;
 }
 
+.s__media {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #ED4D47;
+  border: none;
+  border-radius: 1.8rem;
+  fill: #fff;
+}
+.s__media svg {
+  margin: 9px 9px;
+}
+
+.arrow {
+  fill: #ED4D47;
+}
+
 /*# sourceMappingURL=style.css.map */
