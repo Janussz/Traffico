@@ -1,7 +1,7 @@
 .s__media {
   width: 3.6rem;
   height: 3.6rem;
-  background-color: $col-prime-700;
+  background-color: $col-orange-700;
   border: none;
   border-radius: 1.8rem;
   fill: $col-white;
@@ -12,5 +12,12 @@
 }
 
 .arrow {
-  fill: $col-prime-700;
+  display: inline-block;
+  text-align: center;
+  font-size: 2.9rem;
+  color: $col-orange-700;
+
+  &__white {
+    color: $col-white;
+  }
 }
