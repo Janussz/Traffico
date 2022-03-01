@@ -13,6 +13,10 @@ body {
   background-color: #FEF8F5;
 }
 
+ul {
+  list-style: none;
+}
+
 @font-face {
   font-family: "DM Serif Display";
   font-style: normal;
@@ -77,7 +81,9 @@ p {
   line-height: 19px;
   font-weight: 700;
   color: #402B2B;
+  text-transform: uppercase;
   color: #fff;
+  letter-spacing: 0.05em;
 }
 .p_nav_testi {
   font-size: 16px;
@@ -105,10 +111,15 @@ p {
 }
 
 .btn {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  color: #402B2B;
   text-align: center;
   text-transform: uppercase;
   padding: 2rem 2.4rem;
   background-color: #EE4D47;
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
   letter-spacing: 0.05em;
@@ -132,9 +143,6 @@ p {
   font-size: 2.9rem;
   color: #ED4D47;
 }
-.arrow__white {
-  color: #fff;
-}
 
 .bar {
   width: 1rem;
@@ -143,6 +151,43 @@ p {
   border: 1px solid #000;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
+}
+
+.header__bg {
+  position: relative;
+  max-width: 128.5rem;
+  height: 80rem;
+  background-image: url(/img/Scene.webp);
+}
+.header__wrapper {
+  margin-left: 20rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 9rem 0;
+}
+.header__nav__logo {
+  margin-right: 29rem;
+}
+.header__nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  transform: translateX(4rem);
+}
+.header__header {
+  max-width: 74rem;
+  margin-bottom: 9rem;
+}
+.header__mobil {
+  position: absolute;
+  left: -0.19%;
+  top: 97%;
 }
 
 /*# sourceMappingURL=style.css.map */
