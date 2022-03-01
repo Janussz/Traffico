@@ -1,8 +1,10 @@
 .btn {
+  @include font(1.6rem, 1.9rem, 700);
   text-align: center;
   text-transform: uppercase;
   padding: 2rem 2.4rem;
   background-color: $col-orange-800;
+  color: $col-white;
   border: none;
   border-radius: 0.5rem;
   letter-spacing: 0.05em;

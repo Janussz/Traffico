@@ -13,7 +13,9 @@ p {
 
 .p_nav {
   @include font(16px, 19px, 700);
+  text-transform: uppercase;
   color: $col-white;
+  letter-spacing: 0.05em;
 
   &_testi {
     @include font(16px, 30px, 300);

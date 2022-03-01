@@ -1,0 +1,39 @@
+.header {
+
+  &__bg {
+    position: relative;
+    max-width: 128.5rem;
+    height: 80rem;
+    background-image: url(/img/Scene.webp);
+  }
+
+  &__wrapper {
+    margin-left: 20rem;
+  }
+
+  &__nav {
+    @include flex(row, center, center);
+    padding: 5rem 0 9rem 0;
+
+    &__logo {
+      margin-right: 29rem;
+    }
+
+    &__list {
+      @include flex(row, space-between, center);
+      flex-grow: 1;
+      transform: translateX(4rem);
+    }
+  }
+
+  &__header {
+    max-width: 74rem;
+    margin-bottom: 9rem;
+  }
+
+  &__mobil {
+    position: absolute;
+    left: -0.19%;
+    top: 97%;
+  }
+}
