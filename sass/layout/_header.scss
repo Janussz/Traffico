@@ -1,10 +1,13 @@
 .header {
+  max-width: 100%;
+  position: relative;
 
   &__bg {
-    position: relative;
-    max-width: 128.5rem;
-    height: 80rem;
-    background-image: url(./img/Scene.webp);
+    max-width: 100%;
+    width: 133.5rem;
+    background-image: url(/img/Scene.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__wrapper {
@@ -16,6 +19,7 @@
     padding: 5rem 0 9rem 0;
 
     &__logo {
+      max-width: 21.2rem;
       margin-right: 29rem;
       cursor: pointer;
     }
@@ -29,6 +33,10 @@
         cursor: pointer;
       }
     }
+
+    &__menu {
+      display: none;
+    }
   }
 
   &__header {
@@ -38,7 +46,156 @@
 
   &__mobil {
     position: absolute;
+    max-width: 100%;
     left: -0.19%;
-    top: 97%;
+    top: 80%;
+  }
+
+  &__btn {
+    margin-bottom: 34rem;
+  }
+}
+
+// ***********  MEDIA QUERRY  ***********
+
+
+@media screen and (max-width:1400px) {
+  .header {
+    &__nav {
+
+      &__list {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1380px) {
+  .header {
+
+    &__wrapper {
+      margin: 0 5rem;
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .header {
+
+    &__nav {
+      justify-content: space-between;
+
+      &__list {
+        display: none;
+      }
+
+      &__menu {
+        display: inline-block;
+      }
+
+      &__logo {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:745px) {
+  .header {
+
+    &__header {
+      font-size: 9rem;
+      line-height: 9rem;
+    }
+  }
+}
+
+@media screen and (max-width:681px) {
+  .header {
+
+    &__header {
+      font-size: 8rem;
+      line-height: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width:615px) {
+  .header {
+
+    &__header {
+      font-size: 7rem;
+      line-height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width:550px) {
+  .header {
+
+    &__header {
+      font-size: 6rem;
+      line-height: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width:485px) {
+  .header {
+
+    &__nav {
+      padding: 5rem 0 5rem 0;
+    }
+
+    &__header {
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+  }
+
+  .btn {
+    @include font(1.2rem, 1.6rem, 700);
+    padding: 1.6rem 2rem;
+    color: $col-white;
+  }
+}
+
+@media screen and (max-width:423px) {
+  .header {
+
+    &__wrapper {
+      margin: 0 3rem;
+    }
+
+    &__nav {
+      padding: 5rem 0 5rem 0;
+    }
+
+    &__header {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  .logo {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width:356px) {
+  .header {
+
+    &__nav {
+      padding: 3rem 0 5rem 0;
+    }
+
+    &__header {
+      font-size: 3, 5rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .logo {
+    width: 14rem;
   }
 }
