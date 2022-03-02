@@ -17,12 +17,17 @@
 
     &__logo {
       margin-right: 29rem;
+      cursor: pointer;
     }
 
     &__list {
       @include flex(row, space-between, center);
       flex-grow: 1;
       transform: translateX(4rem);
+
+      &__items {
+        cursor: pointer;
+      }
     }
   }
 
