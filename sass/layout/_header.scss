@@ -3,8 +3,10 @@
   &__bg {
     position: relative;
     max-width: 128.5rem;
-    height: 80rem;
+    height: 95rem;
     background-image: url(./img/Scene.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__wrapper {
@@ -39,6 +41,6 @@
   &__mobil {
     position: absolute;
     left: -0.19%;
-    top: 97%;
+    top: 83%;
   }
 }
