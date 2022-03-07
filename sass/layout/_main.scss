@@ -1,11 +1,22 @@
 .main {
   .about {
-    @include flex(row, space-between, center);
+    // @include flex(row, space-between, center);
     margin: 34rem auto 0 auto;
-    max-width: 117rem;
-    max-height: 55rem;
+    // max-width: 117rem;
+    // max-height: 55rem;
 
-    &__description {}
+    &__description {
+      @include flex(column, space-between, center);
+
+      &__boldtxt {
+        @include flex(row, space-between, center);
+
+        .p_bold {
+          background-color: $col-back-100;
+          padding: 3rem, 5.5rem;
+        }
+      }
+    }
 
   }
 }
