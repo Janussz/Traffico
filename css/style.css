@@ -1,3 +1,15 @@
+.header__mobil {
+  animation: 4s linear 0s alternate truck_move;
+}
+@keyframes truck_move {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 120%;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -235,7 +247,7 @@ p {
 }
 @media screen and (min-width: 400px) {
   .header__mobil {
-    top: 120%;
+    top: 113%;
   }
   .header__header {
     font-size: 4.5rem;
@@ -322,7 +334,7 @@ p {
 }
 @media screen and (min-width: 720px) {
   .header__mobil {
-    top: 115%;
+    top: 100%;
   }
   .header__wrapper {
     margin: 0 7rem;

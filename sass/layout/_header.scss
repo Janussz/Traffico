@@ -50,6 +50,10 @@
     object-fit: cover;
     left: -4%;
     top: 110%;
+
+
+
+
   }
 
   .btn {
@@ -91,7 +95,7 @@
 @media screen and (min-width: 400px) {
   .header {
     &__mobil {
-      top: 120%;
+      top: 113%;
     }
 
     &__header {
@@ -216,7 +220,7 @@
   .header {
 
     &__mobil {
-      top: 115%;
+      top: 100%;
     }
 
     &__wrapper {

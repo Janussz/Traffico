@@ -1,0 +1,13 @@
+.header__mobil {
+  animation: 4s linear 0s alternate truck_move;
+
+  @keyframes truck_move {
+    from {
+      margin-left: 0%;
+    }
+
+    to {
+      margin-left: 120%;
+    }
+  }
+}
