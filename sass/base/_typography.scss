@@ -7,9 +7,22 @@ h2 {
   @include font(48px, 63px, 400, $font-secondary);
 }
 
+h3 {
+  @include font(24px, 40px, 700);
+  letter-spacing: 1.1;
+  color: $col-orange-800;
+  text-transform: uppercase;
+}
+
 p {
   @include font(18px, 40px, 300);
 }
+
+.p_bold {
+  @include font(24px, 36px, 500);
+}
+
+
 
 .p_nav {
   @include font(16px, 19px, 700);

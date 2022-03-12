@@ -86,10 +86,27 @@ h2 {
   color: #402B2B;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #402B2B;
+  letter-spacing: 1.1;
+  color: #EE4D47;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 18px;
   line-height: 40px;
   font-weight: 300;
+  color: #402B2B;
+}
+
+.p_bold {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
   color: #402B2B;
 }
 
@@ -163,6 +180,7 @@ p {
 }
 
 .bar {
+  display: inline-block;
   width: 1rem;
   height: 16rem;
   background-color: #EE4D47;
@@ -450,6 +468,25 @@ p {
   .header__wrapper {
     margin: 0 20rem;
   }
+}
+.main .about {
+  margin: 34rem auto 0 auto;
+}
+.main .about__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .about__description__boldtxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .about__description__boldtxt .p_bold {
+  background-color: #FDEDE8;
+  padding: 3rem, 5.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
