@@ -159,6 +159,10 @@ p {
   border-bottom-left-radius: 0.4rem;
 }
 
+.header {
+  max-width: 100%;
+  position: relative;
+}
 .header__bg {
   position: relative;
   max-width: 128.5rem;
@@ -251,6 +255,9 @@ p {
   }
   .header__nav .logo {
     max-width: 17rem;
+  }
+  .header__menu {
+    display: none;
   }
 }
 @media screen and (min-width: 460px) {

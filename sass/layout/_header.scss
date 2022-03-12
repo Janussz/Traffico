@@ -1,4 +1,6 @@
 .header {
+  max-width: 100%;
+  position: relative;
 
   &__bg {
     position: relative;
@@ -115,6 +117,10 @@
       .logo {
         max-width: 17rem;
       }
+    }
+
+    &__menu {
+      display: none;
     }
   }
 }
