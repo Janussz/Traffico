@@ -1,22 +1,192 @@
 .main {
+  .about_us {
+    padding-top: 20rem;
+  }
+
+  .how {
+    @include flex(column, space-between, center);
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
   .about {
-    // @include flex(row, space-between, center);
-    margin: 34rem auto 0 auto;
-    // max-width: 117rem;
-    // max-height: 55rem;
+    margin: 0rem 2rem 0 2rem;
+
+    p,
+    .p_bold {
+      font-size: 1.6rem;
+    }
 
     &__description {
       @include flex(column, space-between, center);
 
+      &__heading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      &__text {
+        margin-bottom: 3rem;
+      }
+
       &__boldtxt {
         @include flex(row, space-between, center);
+        background-color: $col-back-100;
+        padding: 3rem, 5.5rem;
+      }
 
-        .p_bold {
-          background-color: $col-back-100;
-          padding: 3rem, 5.5rem;
+      .p_bold {
+        margin-left: 1rem;
+      }
+
+      &__img {
+        max-width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main {
+    .about_us {
+      padding-top: 24rem;
+    }
+
+    .about {
+      margin: 0rem 3rem 0 3rem;
+
+      &__description {
+
+        &__heading {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &__text {
+          margin-bottom: 3rem;
         }
       }
     }
+  }
+}
 
+@media screen and (min-width: 450px) {
+  .main {
+    .about_us {
+      padding-top: 26rem;
+    }
+
+    .about {
+      margin: 0rem 3rem 0 3rem;
+
+      .bar {
+        height: 14rem;
+      }
+
+      &__description {
+
+        &__heading {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &__text {
+          margin-bottom: 3rem;
+        }
+
+        &__boldtxt {
+          padding: 2rem, 5.5rem;
+        }
+
+        &__img {
+
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    .about_us {
+      padding-top: 33rem;
+    }
+
+    .about {
+      margin: 0rem 4rem 0 4rem;
+
+      .bar {
+        height: 14rem;
+      }
+
+      &__description {
+
+        &__heading {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &__text {
+          margin-bottom: 3rem;
+        }
+
+        &__boldtxt {
+          padding: 3rem, 5.5rem;
+        }
+
+        .p_bold {
+          margin-left: 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .main {
+    .about_us {
+      padding-top: 40rem;
+    }
+
+    .about {
+      margin: 0rem 4rem 0 4rem;
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main {
+
+    .about_us,
+    .how {
+      @include flex(row, space-between, center);
+    }
+
+    .about {
+      margin: 0rem 4rem 0 8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main {
+    .about {
+      margin: 0rem 16rem 0 14rem;
+
+      .p_bold {
+        font-size: 2.4rem;
+      }
+    }
   }
 }

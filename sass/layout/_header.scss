@@ -4,7 +4,7 @@
 
   &__bg {
     position: relative;
-    max-width: 128.5rem;
+    max-width: 128rem;
     max-height: 80rem;
     background-image: url(/img/Scene.webp);
     background-repeat: no-repeat;
@@ -45,10 +45,10 @@
 
   &__mobil {
     position: absolute;
-    max-width: 50%;
+    max-width: 70%;
     max-height: 39.5rem;
     object-fit: cover;
-    left: -4%;
+    left: -25%;
     top: 110%;
 
 
