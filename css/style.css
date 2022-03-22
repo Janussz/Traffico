@@ -1,12 +1,12 @@
 .header__mobil {
-  animation: 4s linear 0s alternate truck_move;
+  animation: 6s linear 0s alternate truck_move;
 }
 @keyframes truck_move {
-  from {
-    margin-left: 0%;
+  0% {
+    transform: translateX(0);
   }
-  to {
-    margin-left: 120%;
+  100% {
+    transform: translateX(250%);
   }
 }
 
@@ -74,7 +74,6 @@ h1 {
   font-size: 100px;
   line-height: 100px;
   font-weight: 400;
-  color: #402B2B;
   color: #fff;
 }
 
@@ -90,9 +89,8 @@ h3 {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  color: #402B2B;
-  letter-spacing: 1.1;
   color: #EE4D47;
+  letter-spacing: 1.1;
   text-transform: uppercase;
 }
 
@@ -114,9 +112,8 @@ p {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
-  color: #402B2B;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .p_nav_testi {
@@ -129,14 +126,12 @@ p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  color: #402B2B;
   color: #fff;
 }
 .p_nav_head {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  color: #402B2B;
   color: #EE4D47;
 }
 
@@ -148,16 +143,21 @@ p {
   font-size: 1.6rem;
   line-height: 1.9rem;
   font-weight: 700;
-  color: #402B2B;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
   padding: 2rem 2.4rem;
   background-color: #EE4D47;
-  color: #fff;
   border: none;
   border-radius: 0.5rem;
   letter-spacing: 0.05em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .s__media {
@@ -184,7 +184,7 @@ p {
   width: 1rem;
   height: 18rem;
   background-color: #EE4D47;
-  border: 1px solid #000;
+  border: none;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
 }
@@ -240,9 +240,8 @@ p {
   font-size: 1rem;
   line-height: 1.4rem;
   font-weight: 700;
-  color: #402B2B;
-  padding: 1.2rem 1.6rem;
   color: #fff;
+  padding: 1.2rem 1.6rem;
 }
 
 @media screen and (min-width: 365px) {
@@ -316,9 +315,8 @@ p {
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: 700;
-    color: #402B2B;
-    padding: 1.8rem 2.2rem;
     color: #fff;
+    padding: 1.8rem 2.2rem;
     margin-bottom: 2rem;
   }
 }
@@ -367,9 +365,8 @@ p {
     font-size: 1.6rem;
     line-height: 1.9rem;
     font-weight: 700;
-    color: #402B2B;
-    padding: 2rem 2.4rem;
     color: #fff;
+    padding: 2rem 2.4rem;
   }
   .header .btn-get {
     margin-bottom: 12rem;
@@ -469,6 +466,13 @@ p {
     margin: 0 20rem;
   }
 }
+.main {
+  margin: 0 2rem;
+}
+.main h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
 .main .about_us {
   padding-top: 20rem;
 }
@@ -483,9 +487,6 @@ p {
 .main .how__img {
   max-width: 100%;
 }
-.main .about {
-  margin: 0rem 2rem 0 2rem;
-}
 .main .about p,
 .main .about .p_bold {
   font-size: 1.6rem;
@@ -494,11 +495,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-}
-.main .about__description__heading {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  align-items: flex-start;
 }
 .main .about__description__text {
   margin-bottom: 3rem;
@@ -518,17 +515,33 @@ p {
   max-width: 100%;
   margin-top: 2rem;
 }
+.main .FAQ {
+  position: relative;
+}
+.main .FAQ h2 {
+  font-size: 2.7rem;
+  line-height: 4rem;
+}
+.main .FAQ__background {
+  position: absolute;
+  max-width: 100%;
+  max-height: 150rem;
+  z-index: -1;
+  top: -2rem;
+  right: -2rem;
+  overflow: hidden;
+}
+.main .FAQ__heading__img {
+  max-width: 92%;
+  margin-top: 4rem;
+}
 
 @media screen and (min-width: 400px) {
+  .main {
+    margin: 0 3rem;
+  }
   .main .about_us {
     padding-top: 24rem;
-  }
-  .main .about {
-    margin: 0rem 3rem 0 3rem;
-  }
-  .main .about__description__heading {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
   }
   .main .about__description__text {
     margin-bottom: 3rem;
@@ -538,39 +551,28 @@ p {
   .main .about_us {
     padding-top: 26rem;
   }
-  .main .about {
-    margin: 0rem 3rem 0 3rem;
-  }
-  .main .about .bar {
+  .main .bar {
     height: 14rem;
   }
-  .main .about__description__heading {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  .main .about__description__text {
+  .main__description__text {
     margin-bottom: 3rem;
   }
-  .main .about__description__boldtxt {
+  .main__description__boldtxt {
     padding: 2rem, 5.5rem;
   }
-  .main .about__description__img {
+  .main__description__img {
     margin-top: 4rem;
   }
 }
 @media screen and (min-width: 500px) {
+  .main {
+    margin: 0 4rem;
+  }
   .main .about_us {
     padding-top: 33rem;
   }
-  .main .about {
-    margin: 0rem 4rem 0 4rem;
-  }
   .main .about .bar {
     height: 14rem;
-  }
-  .main .about__description__heading {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
   }
   .main .about__description__text {
     margin-bottom: 3rem;
@@ -584,17 +586,21 @@ p {
   }
 }
 @media screen and (min-width: 850px) {
+  .main h3 {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
   .main .about_us {
     padding-top: 40rem;
-  }
-  .main .about {
-    margin: 0rem 4rem 0 4rem;
   }
   .main .about p {
     font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 1100px) {
+  .main {
+    margin: 0rem 4rem 0 8rem;
+  }
   .main .about_us,
 .main .how {
     display: flex;
@@ -602,16 +608,16 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  .main .about {
-    margin: 0rem 4rem 0 8rem;
-  }
 }
 @media screen and (min-width: 1300px) {
-  .main .about {
+  .main {
     margin: 0rem 16rem 0 14rem;
   }
   .main .about .p_bold {
     font-size: 2.4rem;
+  }
+  .main .FAQ__background {
+    right: -16rem;
   }
 }
 

@@ -1,46 +1,43 @@
 h1 {
-  @include font(100px, 100px, 400, $font-secondary);
-  color: $col-white;
+  @include font(100px, 100px, 400, $col-white, $font-secondary);
 }
 
 h2 {
-  @include font(48px, 63px, 400, $font-secondary);
+  @include font(48px, 63px, 400, $col-text, $font-secondary);
 }
 
 h3 {
-  @include font(24px, 40px, 700);
+  @include font(24px, 40px, 700, $col-orange-800);
   letter-spacing: 1.1;
-  color: $col-orange-800;
   text-transform: uppercase;
 }
 
 p {
-  @include font(18px, 40px, 300);
+  @include font(18px, 40px, 300, $col-text);
 }
 
 .p_bold {
-  @include font(24px, 36px, 500);
+  @include font(24px, 36px, 500, $col-text);
 }
 
 
 
 .p_nav {
-  @include font(16px, 19px, 700);
+  @include font(16px, 19px, 700, $col-white);
   text-transform: uppercase;
-  color: $col-white;
   letter-spacing: 0.05em;
 
   &_testi {
-    @include font(16px, 30px, 300);
+    @include font(16px, 30px, 300, $col-text);
   }
 
   &_foot {
-    @include font(20px, 30px, 400);
-    color: $col-white;
+    @include font(20px, 30px, 400, $col-white);
+
   }
 
   &_head {
-    @include font(24px, 40px, 700);
-    color: $col-orange-800;
+    @include font(24px, 40px, 700, $col-orange-800);
+
   }
 }

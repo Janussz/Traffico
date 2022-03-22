@@ -1,4 +1,11 @@
 .main {
+  margin: 0 2rem;
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
   .about_us {
     padding-top: 20rem;
   }
@@ -14,7 +21,6 @@
   }
 
   .about {
-    margin: 0rem 2rem 0 2rem;
 
     p,
     .p_bold {
@@ -22,12 +28,7 @@
     }
 
     &__description {
-      @include flex(column, space-between, center);
-
-      &__heading {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
+      @include flex(column, space-between, flex-start);
 
       &__text {
         margin-bottom: 3rem;
@@ -49,23 +50,45 @@
       }
     }
   }
+
+  .FAQ {
+    position: relative;
+
+    h2 {
+      font-size: 2.7rem;
+      line-height: 4rem;
+    }
+
+    &__background {
+      position: absolute;
+      max-width: 100%;
+      max-height: 150rem;
+      z-index: -1;
+      top: -2rem;
+      right: -2rem;
+      overflow: hidden;
+    }
+
+    &__heading {
+      &__img {
+        max-width: 92%;
+        margin-top: 4rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 400px) {
   .main {
+    margin: 0 3rem;
+
     .about_us {
       padding-top: 24rem;
     }
 
     .about {
-      margin: 0rem 3rem 0 3rem;
 
       &__description {
-
-        &__heading {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-        }
 
         &__text {
           margin-bottom: 3rem;
@@ -81,56 +104,43 @@
       padding-top: 26rem;
     }
 
-    .about {
-      margin: 0rem 3rem 0 3rem;
+    .bar {
+      height: 14rem;
+    }
 
-      .bar {
-        height: 14rem;
+    &__description {
+
+      &__text {
+        margin-bottom: 3rem;
       }
 
-      &__description {
+      &__boldtxt {
+        padding: 2rem, 5.5rem;
+      }
 
-        &__heading {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-        }
-
-        &__text {
-          margin-bottom: 3rem;
-        }
-
-        &__boldtxt {
-          padding: 2rem, 5.5rem;
-        }
-
-        &__img {
-
-          margin-top: 4rem;
-        }
+      &__img {
+        margin-top: 4rem;
       }
     }
+
   }
 }
 
 @media screen and (min-width: 500px) {
   .main {
+    margin: 0 4rem;
+
     .about_us {
       padding-top: 33rem;
     }
 
     .about {
-      margin: 0rem 4rem 0 4rem;
 
       .bar {
         height: 14rem;
       }
 
       &__description {
-
-        &__heading {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-        }
 
         &__text {
           margin-bottom: 3rem;
@@ -151,12 +161,16 @@
 
 @media screen and (min-width: 850px) {
   .main {
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 4rem;
+    }
+
     .about_us {
       padding-top: 40rem;
     }
 
     .about {
-      margin: 0rem 4rem 0 4rem;
 
       p {
         font-size: 1.8rem;
@@ -167,25 +181,29 @@
 
 @media screen and (min-width: 1100px) {
   .main {
+    margin: 0rem 4rem 0 8rem;
 
     .about_us,
     .how {
       @include flex(row, space-between, center);
-    }
-
-    .about {
-      margin: 0rem 4rem 0 8rem;
     }
   }
 }
 
 @media screen and (min-width: 1300px) {
   .main {
+    margin: 0rem 16rem 0 14rem;
+
     .about {
-      margin: 0rem 16rem 0 14rem;
 
       .p_bold {
         font-size: 2.4rem;
+      }
+    }
+
+    .FAQ {
+      &__background {
+        right: -16rem;
       }
     }
   }
