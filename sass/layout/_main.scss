@@ -1,22 +1,210 @@
 .main {
+  margin: 0 2rem;
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about_us {
+    padding-top: 20rem;
+  }
+
+  .how {
+    @include flex(column, space-between, center);
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+
   .about {
-    // @include flex(row, space-between, center);
-    margin: 34rem auto 0 auto;
-    // max-width: 117rem;
-    // max-height: 55rem;
+
+    p,
+    .p_bold {
+      font-size: 1.6rem;
+    }
 
     &__description {
-      @include flex(column, space-between, center);
+      @include flex(column, space-between, flex-start);
+
+      &__text {
+        margin-bottom: 3rem;
+      }
 
       &__boldtxt {
         @include flex(row, space-between, center);
+        background-color: $col-back-100;
+        padding: 3rem, 5.5rem;
+      }
 
-        .p_bold {
-          background-color: $col-back-100;
-          padding: 3rem, 5.5rem;
+      .p_bold {
+        margin-left: 1rem;
+      }
+
+      &__img {
+        max-width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .FAQ {
+    position: relative;
+
+    h2 {
+      font-size: 2.7rem;
+      line-height: 4rem;
+    }
+
+    &__background {
+      position: absolute;
+      max-width: 100%;
+      max-height: 150rem;
+      z-index: -1;
+      top: -2rem;
+      right: -2rem;
+      overflow: hidden;
+    }
+
+    &__heading {
+      &__img {
+        max-width: 92%;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main {
+    margin: 0 3rem;
+
+    .about_us {
+      padding-top: 24rem;
+    }
+
+    .about {
+
+      &__description {
+
+        &__text {
+          margin-bottom: 3rem;
         }
       }
     }
+  }
+}
 
+@media screen and (min-width: 450px) {
+  .main {
+    .about_us {
+      padding-top: 26rem;
+    }
+
+    .bar {
+      height: 14rem;
+    }
+
+    &__description {
+
+      &__text {
+        margin-bottom: 3rem;
+      }
+
+      &__boldtxt {
+        padding: 2rem, 5.5rem;
+      }
+
+      &__img {
+        margin-top: 4rem;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    margin: 0 4rem;
+
+    .about_us {
+      padding-top: 33rem;
+    }
+
+    .about {
+
+      .bar {
+        height: 14rem;
+      }
+
+      &__description {
+
+        &__text {
+          margin-bottom: 3rem;
+        }
+
+        &__boldtxt {
+          padding: 3rem, 5.5rem;
+        }
+
+        .p_bold {
+          margin-left: 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .main {
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 4rem;
+    }
+
+    .about_us {
+      padding-top: 40rem;
+    }
+
+    .about {
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main {
+    margin: 0rem 4rem 0 8rem;
+
+    .about_us,
+    .how {
+      @include flex(row, space-between, center);
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main {
+    margin: 0rem 16rem 0 14rem;
+
+    .about {
+
+      .p_bold {
+        font-size: 2.4rem;
+      }
+    }
+
+    .FAQ {
+      &__background {
+        right: -16rem;
+      }
+    }
   }
 }
