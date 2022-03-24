@@ -16,6 +16,9 @@ h3 {
 
 p {
   @include font(18px, 40px, 300);
+  &--form {
+    @include font(16px, 40px, 300);
+  }
 }
 
 .p_bold {
