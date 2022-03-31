@@ -102,12 +102,34 @@ p {
   font-weight: 300;
   color: #402B2B;
 }
+p--form {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #402B2B;
+}
+p--footer {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #402B2B;
+}
 
 .p_bold {
   font-size: 24px;
   line-height: 36px;
   font-weight: 500;
   color: #402B2B;
+}
+
+.p_form {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #402B2B;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .p_nav {
@@ -187,6 +209,27 @@ p {
   border: 1px solid #000;
   border-top-left-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
+}
+
+.input {
+  width: 40rem;
+  height: 6rem;
+  padding: 4rem;
+  border: #EE4D47 solid 0.1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #402B2B;
+}
+.input:focus, .input :not(.input::placeholder) {
+  border-width: 0.2rem;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #402B2B;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
 }
 
 .header {
@@ -487,6 +530,73 @@ p {
 .main .about__description__boldtxt .p_bold {
   background-color: #FDEDE8;
   padding: 3rem, 5.5rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 21rem;
+}
+.footer .form {
+  width: 100%;
+  background-color: #0F264C;
+  border-top-right-radius: 8rem;
+}
+.footer .form__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 17rem;
+  max-width: 102.5rem;
+}
+.footer .form__aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 38.6rem;
+  margin-top: 11rem;
+  margin-bottom: 8rem;
+}
+.footer .form__aside .p_nav_foot {
+  max-width: 33rem;
+}
+.footer .form__aside .bar {
+  margin-right: 4rem;
+  border: 0px;
+}
+.footer .form__box {
+  background-color: #fff;
+  margin-top: -11rem;
+  padding: 5.2rem 7.5rem;
+  border-radius: 1rem;
+}
+.footer .form__input-wrap {
+  margin-bottom: 3rem;
+  max-width: 40rem;
+}
+.footer .form .btn-arrow {
+  padding-left: 2.4rem;
+}
+.footer .form__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 12rem;
+  max-width: 102.4rem;
+}
+.footer .form__list {
+  min-width: 36.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,12 +19,21 @@ p {
   &--form {
     @include font(16px, 40px, 300);
   }
+  &--footer {
+    @include font(16px, 30px, 300);
+  }
 }
 
 .p_bold {
   @include font(24px, 36px, 500);
 }
 
+.p_form {
+  @include font(16px, 19px, 400);
+  color: $col-white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
 
 .p_nav {
