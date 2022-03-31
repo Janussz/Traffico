@@ -1,0 +1,14 @@
+.input {
+    width: 40rem;
+    height: 6rem;
+    padding: 4rem;
+    border: $col-orange-800 solid 0.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    @include font(18px, 40px, 300);
+    &:focus, :not(.input::placeholder) {
+        border-width: 0.2rem;
+        @include font(18px, 40px, 700);
+        box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+    }
+}
