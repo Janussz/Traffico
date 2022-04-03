@@ -632,12 +632,6 @@ p {
   font-size: 2.7rem;
   line-height: 4rem;
 }
-.main .FAQ h3 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 0.05em;
-}
 .main .FAQ .extension {
   background: #EE4D47;
   opacity: 0.2;
@@ -709,9 +703,6 @@ p {
   .main .FAQ h2 {
     font-size: 3.5rem;
     line-height: 5rem;
-  }
-  .main .FAQ h3 {
-    margin-bottom: 0;
   }
   .main .FAQ__heading__container {
     max-width: 55rem;
