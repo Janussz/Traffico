@@ -598,5 +598,22 @@ p--footer {
   justify-content: space-between;
   align-items: center;
 }
+.footer .social {
+  padding: 5rem 0rem;
+}
+.footer .social__wrap {
+  min-width: 102.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .social__img-wrap {
+  min-width: 17rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */

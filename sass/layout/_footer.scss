@@ -53,4 +53,17 @@
             @include flex(row, space-between, center);
         }
     }
+
+    .social {
+        padding: 5rem 0rem;
+        &__wrap {
+            min-width: 102.4rem;
+            @include flex(row, space-between, center);
+        }
+
+        &__img-wrap {
+            min-width: 17rem;
+            @include flex(row, space-between, center);
+        }
+    }
 }
