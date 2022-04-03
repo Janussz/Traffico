@@ -20,7 +20,9 @@ p {
   @include font(24px, 36px, 500, $col-text);
 }
 
-
+.p_question {
+  @include font(18px, 30px, 500, $col-text)
+}
 
 .p_nav {
   @include font(16px, 19px, 700, $col-white);
