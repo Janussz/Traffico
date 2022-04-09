@@ -3,11 +3,89 @@
 }
 @keyframes truck_move {
   0% {
-    transform: translateX(0);
+    transform: translateX(-75%);
+  }
+  50% {
+    transform: translateX(-35%);
   }
   100% {
-    transform: translateX(250%);
+    transform: translateX(0);
   }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .container {
+    padding: 0 6rem;
+  }
+}
+.logo__footer {
+  width: 17rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 2.4rem;
+  background-color: #EE4D47;
+  border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.s__media {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #ED4D47;
+  border: none;
+  border-radius: 1.8rem;
+  fill: #fff;
+}
+.s__media svg {
+  margin: 9px 9px;
+}
+
+.arrow {
+  display: inline-block;
+  text-align: center;
+  font-size: 2.9rem;
+  color: #ED4D47;
+}
+
+.sign {
+  fill: #EE4D47;
+  width: 15px;
+  height: 15px;
+}
+
+.bar {
+  display: inline-block;
+  width: 1rem;
+  height: 18rem;
+  background-color: #EE4D47;
+  border: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
 }
 
 * {
@@ -39,35 +117,35 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/font/DMSerifDisplay-Regular.ttf);
+  src: url(./../font/DMSerifDisplay-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/font/Rubik-Light.ttf);
+  src: url(./../font/Rubik-Light.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/font/Rubik-Regular.ttf);
+  src: url(./../font/Rubik-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/font/Rubik-Medium.ttf);
+  src: url(./../font/Rubik-Medium.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/font/Rubik-Bold.ttf);
+  src: url(./../font/Rubik-Bold.ttf);
 }
 h1 {
   font-family: "DM Serif Display";
@@ -142,80 +220,14 @@ p {
   color: #EE4D47;
 }
 
-.logo__footer {
-  width: 17rem;
-}
-
-.btn {
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 2rem 2.4rem;
-  background-color: #EE4D47;
-  border: none;
-  border-radius: 0.5rem;
-  letter-spacing: 0.05em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
-}
-
-.btn:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.s__media {
-  width: 3.6rem;
-  height: 3.6rem;
-  background-color: #ED4D47;
-  border: none;
-  border-radius: 1.8rem;
-  fill: #fff;
-}
-.s__media svg {
-  margin: 9px 9px;
-}
-
-.arrow {
-  display: inline-block;
-  text-align: center;
-  font-size: 2.9rem;
-  color: #ED4D47;
-}
-
-.sign {
-  fill: #EE4D47;
-  width: 15px;
-  height: 15px;
-}
-
-.bar {
-  display: inline-block;
-  width: 1rem;
-  height: 18rem;
-  background-color: #EE4D47;
-  border: none;
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-}
-
 .header {
+  padding: 1rem 0;
   max-width: 100%;
-  position: relative;
-}
-.header__bg {
-  position: relative;
-  max-width: 128rem;
-  max-height: 80rem;
-  background-image: url(/img/Scene.webp);
+  margin: 0 auto;
+  background-image: url(./../img/Scene.webp);
   background-repeat: no-repeat;
   background-size: cover;
-}
-.header__wrapper {
-  margin: 0 2rem;
+  position: relative;
 }
 .header__header {
   font-size: 3.5rem;
@@ -227,18 +239,18 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
-}
-.header__nav__logo {
-  cursor: pointer;
-}
-.header__nav__logo .logo {
-  max-width: 12rem;
+  padding: 1rem;
 }
 .header__nav__list {
   display: none;
 }
-.header__nav__menu {
+.header__logo {
+  cursor: pointer;
+}
+.header__logo .logo {
+  max-width: 12rem;
+}
+.header__menu {
   display: inline-block;
 }
 .header__mobil {
@@ -246,7 +258,7 @@ p {
   max-width: 70%;
   max-height: 39.5rem;
   object-fit: cover;
-  left: -25%;
+  left: -20%;
   top: 110%;
 }
 .header .btn {
@@ -265,7 +277,7 @@ p {
     margin: 0 3rem;
   }
   .header__nav {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem;
   }
   .header__header {
     font-size: 4rem;
@@ -293,7 +305,7 @@ p {
     max-width: 35rem;
   }
   .header__nav {
-    padding: 3rem 0 3rem 0;
+    padding: 3rem;
   }
   .header__nav .logo {
     max-width: 17rem;
@@ -322,7 +334,7 @@ p {
     padding-bottom: 5rem;
   }
   .header__nav {
-    padding: 3rem 0 3rem 0;
+    padding: 4rem;
   }
   .header .btn-get {
     font-size: 1.4rem;
@@ -358,7 +370,7 @@ p {
     line-height: 6.3rem;
   }
   .header__nav {
-    padding: 4rem 0 4rem 0;
+    padding: 5rem;
   }
 }
 @media screen and (min-width: 720px) {
@@ -369,7 +381,7 @@ p {
     margin: 0 7rem;
   }
   .header__nav {
-    padding: 5rem 0 5rem 0;
+    padding: 6rem 4rem 6rem 4rem;
   }
   .header__nav .logo {
     max-width: 20rem;
@@ -412,7 +424,7 @@ p {
 }
 @media screen and (min-width: 900px) {
   .header__mobil {
-    top: 90%;
+    top: 84%;
   }
   .header__wrapper {
     margin: 0 10rem;
@@ -432,8 +444,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 60rem;
     flex-grow: 1;
-    transform: translateX(4rem);
   }
   .header__nav__list__items {
     cursor: pointer;
@@ -463,6 +475,13 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header__nav {
+    padding: 6rem 4rem 6rem 4rem;
+    max-width: 145rem;
+  }
+  .header__nav .logo {
+    max-width: 20rem;
+  }
   .header__header {
     font-size: 10rem;
     line-height: 10rem;
@@ -471,16 +490,10 @@ p {
     margin-bottom: 25rem;
   }
 }
-@media screen and (min-width: 1300px) {
-  .header__mobil {
-    top: 84%;
+@media screen and (min-width: 1450px) {
+  .header .btn-get {
+    margin-bottom: 38rem;
   }
-  .header__wrapper {
-    margin: 0 20rem;
-  }
-}
-.main {
-  padding: 0 2rem;
 }
 .main h3 {
   font-size: 1.8rem;
@@ -491,16 +504,6 @@ p {
   .main h3 {
     font-size: 2.4rem;
     margin-bottom: 4rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .main {
-    margin: 0rem 1rem 0 7rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main {
-    margin: 0rem 12rem 0 10rem;
   }
 }
 .main .about {
@@ -637,15 +640,17 @@ p {
   opacity: 0.2;
   margin-bottom: 0;
 }
-.main .FAQ__background {
+.main .FAQ__heading::after {
+  display: inline-block;
   position: absolute;
+  content: "";
   background-color: #FDEDE8;
-  width: 117rem;
+  width: 122rem;
   height: 150rem;
   border-top-left-radius: 11rem;
   z-index: -1;
   top: -2rem;
-  right: -2rem;
+  right: 0;
   overflow: hidden;
 }
 .main .FAQ__heading__img {
@@ -683,7 +688,7 @@ p {
     font-size: 3rem;
     line-height: 4.7rem;
   }
-  .main .FAQ__heading__container {
+  .main .FAQ__heading__content {
     max-width: 40rem;
   }
   .main .FAQ__heading__img {
@@ -711,7 +716,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
   }
   .main .FAQ__questions .p_bold {
     font-size: 1.8rem;

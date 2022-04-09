@@ -1,5 +1,4 @@
 .main {
-  padding: 0 2rem;
 
   h3 {
     font-size: 1.8rem;
@@ -14,18 +13,5 @@
       font-size: 2.4rem;
       margin-bottom: 4rem;
     }
-  }
-}
-
-
-@media screen and (min-width: 1000px) {
-  .main {
-    margin: 0rem 1rem 0 7rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .main {
-    margin: 0rem 12rem 0 10rem;
   }
 }
