@@ -13,15 +13,17 @@
       margin-bottom: 0;
     }
 
-    &__background {
+    &__heading::after {
+      display: inline-block;
       position: absolute;
+      content: "";
       background-color: $col-back-100;
-      width: 117rem;
+      width: 122rem;
       height: 150rem;
       border-top-left-radius: 11rem;
       z-index: -1;
       top: -2rem;
-      right: -2rem;
+      right: 0;
       overflow: hidden;
     }
 
@@ -35,7 +37,6 @@
     &__questions {
       margin-top: 9rem;
       text-align: start;
-
 
       .p_bold {
         font-size: 1.4rem;
@@ -72,7 +73,7 @@
       }
 
       &__heading {
-        &__container {
+        &__content {
           max-width: 40rem
         }
 
@@ -116,7 +117,7 @@
       }
 
       &__questions {
-        @include flex(row, space-between, center);
+        @include flex(row, space-between, start);
 
         .p_bold {
           font-size: 1.8rem;
