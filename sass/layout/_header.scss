@@ -1,12 +1,10 @@
 .header {
-  padding: 1rem 0;
   max-width: 100%;
   margin: 0 auto;
   background-image: url(./../img/Scene.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 
   &__header {
     font-size: 3.5rem;
@@ -23,12 +21,9 @@
     }
   }
 
-  &__logo {
+  .logo {
+    max-width: 14rem;
     cursor: pointer;
-
-    .logo {
-      max-width: 12rem;
-    }
   }
 
   &__menu {
@@ -42,12 +37,12 @@
     object-fit: cover;
     left: -20%;
     top: 110%;
+    animation: 2s linear 0s alternate truck_move;
   }
 
   .btn {
     @include font(1rem, 1.4rem, 700, $col-white);
     padding: 1.2rem 1.6rem;
-
   }
 }
 
@@ -71,10 +66,6 @@
       font-size: 4rem;
       line-height: 5rem;
     }
-
-    .logo {
-      max-width: 14rem;
-    }
   }
 }
 
@@ -88,10 +79,6 @@
       font-size: 4.5rem;
       line-height: 5.5rem;
     }
-  }
-
-  .logo {
-    max-width: 16rem;
   }
 }
 
@@ -127,7 +114,6 @@
     }
 
     &__nav {
-
       .logo {
         max-width: 18rem;
       }
@@ -183,7 +169,6 @@
 
 @media screen and (min-width: 660px) {
   .header {
-
     &__wrapper {
       margin: 0 6rem;
     }
@@ -201,7 +186,6 @@
 
 @media screen and (min-width: 720px) {
   .header {
-
     &__mobil {
       top: 100%;
     }
@@ -230,16 +214,13 @@
 }
 
 @media screen and (min-width: 760px) {
-
   .header {
-
     &__header {
       font-size: 6rem;
       line-height: 7rem;
     }
 
     &__nav {
-
       .logo {
         max-width: 21rem;
       }
@@ -259,7 +240,6 @@
     }
 
     &__nav {
-
       .logo {
         max-width: 21rem;
         margin-right: 9rem;
@@ -302,7 +282,6 @@
         max-width: 60rem;
         flex-grow: 1;
 
-
         &__items {
           cursor: pointer;
         }
@@ -321,7 +300,6 @@
 
 @media screen and (min-width: 1100px) {
   .header {
-
     .btn-get {
       margin-bottom: 19rem;
     }
@@ -330,7 +308,6 @@
 
 @media screen and (min-width: 1150px) {
   .header {
-
     &__wrapper {
       margin: 0 15rem;
     }

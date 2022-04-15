@@ -1,20 +1,16 @@
-.header__mobil {
-  animation: 6s linear 0s alternate truck_move;
+@keyframes truck_move {
 
-  @keyframes truck_move {
-
-    0% {
-      transform: translateX(-75%);
-    }
-
-    50% {
-      transform: translateX(-35%);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-
-
+  0% {
+    transform: translateX(-75%);
   }
+
+  50% {
+    transform: translateX(-35%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+
 }

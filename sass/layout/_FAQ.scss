@@ -1,72 +1,65 @@
 .main {
-  .FAQ {
+  .FAQ__wrapper {
+    width: 100%;
     position: relative;
 
-    h2 {
-      font-size: 2.7rem;
-      line-height: 4rem;
-    }
-
-    .extension {
-      background: $col-orange-800;
-      opacity: 0.2;
-      margin-bottom: 0;
-    }
-
-    &__heading::after {
-      display: inline-block;
-      position: absolute;
-      content: "";
-      background-color: $col-back-100;
-      width: 122rem;
-      height: 150rem;
-      border-top-left-radius: 11rem;
-      z-index: -1;
-      top: -2rem;
-      right: 0;
-      overflow: hidden;
-    }
-
-    &__heading {
-      &__img {
-        max-width: 92%;
-        margin-top: 4rem;
-      }
-    }
-
-    &__questions {
-      margin-top: 9rem;
-      text-align: start;
-
-      .p_bold {
-        font-size: 1.4rem;
-        line-height: 2rem;
-        margin-right: 1rem;
+    .FAQ {
+      h2 {
+        font-size: 2.7rem;
+        line-height: 4rem;
       }
 
-      &__list {
-        margin-right: 2rem;
+      .extension {
+        background: $col-orange-800;
+        opacity: 0.2;
+        margin-bottom: 0;
+      }
 
-        &-item {
-          margin: 0 auto;
-          background-color: $col-white;
-          max-width: 30rem;
-          height: 8rem;
-          border-radius: 9px;
-          @include flex(row, space-between, center);
-          padding: 1.5rem 1.5rem;
-          margin-bottom: 1rem;
+      &__heading {
+        &__img {
+          max-width: 92%;
+          margin-top: 4rem;
+        }
+      }
+
+      &__questions {
+        margin-top: 9rem;
+        text-align: start;
+
+        &__list {
+          margin-right: 2rem;
+
+          &-item {
+            @include flex(row, space-between, center);
+            height: 8rem;
+            border-radius: 9px;
+            margin: 0 auto 1rem;
+            padding: 1.5rem 1.5rem;
+            background-color: $col-white;
+          }
         }
       }
     }
+  }
+
+  .FAQ__wrapper::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    background-color: $col-back-100;
+    width: 80%;
+    height: 100%;
+    border-top-left-radius: 11rem;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    overflow: hidden;
   }
 }
 
 @media screen and (min-width: 500px) {
   .main {
-
     .FAQ {
-
       h2 {
         font-size: 3rem;
         line-height: 4.7rem;
@@ -74,7 +67,7 @@
 
       &__heading {
         &__content {
-          max-width: 40rem
+          max-width: 57rem;
         }
 
         &__img {
@@ -83,7 +76,6 @@
       }
 
       &__questions {
-
         .p_bold {
           font-size: 1.8rem;
           line-height: 3.3rem;
@@ -102,38 +94,21 @@
 
 @media screen and (min-width: 850px) {
   .main {
-
     .FAQ {
-
       h2 {
         font-size: 3.5rem;
         line-height: 5rem;
       }
 
-      &__heading {
-        &__container {
-          max-width: 55rem;
-        }
-      }
-
       &__questions {
-        @include flex(row, space-between, start);
-
-        .p_bold {
-          font-size: 1.8rem;
-          line-height: 3.3rem;
-        }
-
-
+        @include flex(row, center, start);
       }
     }
   }
 
   @media screen and (min-width: 1100px) {
     .main {
-
       .FAQ {
-
         &__heading {
           @include flex(row, space-between, center)
         }
@@ -143,24 +118,16 @@
 
   @media screen and (min-width: 1200px) {
     .main {
-
       .FAQ {
-
         h2 {
           font-size: 4.8rem;
           line-height: 6.7rem;
         }
 
-        &__background {
-          right: -16rem;
-        }
-
         &__questions {
-
           &__list-item {
             max-width: 55rem;
             height: 9rem;
-
             z-index: 1;
             padding: 1.5rem 3.5rem;
           }

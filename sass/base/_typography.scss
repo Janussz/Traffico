@@ -13,11 +13,11 @@ h3 {
 }
 
 p {
-  @include font(18px, 40px, 300, $col-text);
+  @include font(14px, 30px, 300, $col-text);
 }
 
 .p_bold {
-  @include font(24px, 36px, 500, $col-text);
+  @include font(14px, 30px, 500, $col-text);
 }
 
 .p_question {
@@ -41,5 +41,23 @@ p {
   &_head {
     @include font(24px, 40px, 700, $col-orange-800);
 
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  p,
+  .p_bold {
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  p,
+  .p_bold {
+    font-size: 1.8rem;
+    margin-left: 3rem;
   }
 }
