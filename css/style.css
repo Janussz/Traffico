@@ -232,6 +232,10 @@ p--footer {
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
 }
 
+.form__content:hover {
+  cursor: pointer;
+}
+
 .header {
   max-width: 100%;
   position: relative;
@@ -537,14 +541,51 @@ p--footer {
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  max-width: 170rem;
+  max-width: 140rem;
+  position: relative;
 }
-.footer .form {
+.footer__container .truck {
+  position: relative;
+  align-self: flex-start;
+  margin-bottom: -4.2rem;
+}
+.footer__container .truck::before {
+  content: "";
+  background-image: url(../img/truckVB.png);
+  background-repeat: no-repeat;
+  width: 19.1rem;
+  height: 9.5rem;
+  position: absolute;
+  z-index: -1;
+  right: -6rem;
+  bottom: 3rem;
+}
+.footer__container .truck::after {
+  content: "";
+  background-image: url(../img/truckVL.png);
+  background-repeat: no-repeat;
+  width: 12.8rem;
+  height: 9.4rem;
+  position: absolute;
+  left: 0;
+  bottom: 0.3rem;
+}
+.footer__container .form {
   width: 100%;
   background-color: #0F264C;
   border-top-right-radius: 8rem;
+  z-index: -2;
 }
-.footer .form__content {
+.footer__container .form::before {
+  content: "";
+  background-image: url(../img/Vector.png);
+  background-repeat: no-repeat;
+  width: 103.3rem;
+  height: 46.6rem;
+  position: absolute;
+  z-index: -1;
+}
+.footer__container .form__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -553,7 +594,7 @@ p--footer {
   margin-bottom: 17rem;
   max-width: 102.5rem;
 }
-.footer .form__aside {
+.footer__container .form__aside {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -562,27 +603,27 @@ p--footer {
   margin-top: 11rem;
   margin-bottom: 8rem;
 }
-.footer .form__aside .p_nav_foot {
+.footer__container .form__aside .p_nav_foot {
   max-width: 33rem;
 }
-.footer .form__aside .bar {
+.footer__container .form__aside .bar {
   margin-right: 4rem;
   border: 0px;
 }
-.footer .form__box {
+.footer__container .form__box {
   background-color: #fff;
   margin-top: -11rem;
   padding: 5.2rem 7.5rem;
   border-radius: 1rem;
 }
-.footer .form__input-wrap {
+.footer__container .form__input-wrap {
   margin-bottom: 3rem;
   max-width: 40rem;
 }
-.footer .form .btn-arrow {
+.footer__container .form .btn-arrow {
   padding-left: 2.4rem;
 }
-.footer .form__footer {
+.footer__container .form__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -591,24 +632,26 @@ p--footer {
   margin-bottom: 12rem;
   max-width: 102.4rem;
 }
-.footer .form__list {
+.footer__container .form__list {
   min-width: 36.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.footer .social {
+.footer__container .social {
+  width: 100%;
   padding: 5rem 0rem;
 }
-.footer .social__wrap {
-  min-width: 102.4rem;
+.footer__container .social__wrap {
+  max-width: 102.4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
 }
-.footer .social__img-wrap {
+.footer__container .social__img-wrap {
   min-width: 17rem;
   display: flex;
   flex-direction: row;
