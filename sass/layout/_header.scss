@@ -1,19 +1,12 @@
 .header {
+  padding: 1rem 0;
   max-width: 100%;
+  margin: 0 auto;
+  background-image: url(./../img/Scene.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 
-  &__bg {
-    position: relative;
-    max-width: 128.5rem;
-    max-height: 80rem;
-    background-image: url(/img/Scene.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__wrapper {
-    margin: 0 2rem;
-  }
 
   &__header {
     font-size: 3.5rem;
@@ -23,45 +16,39 @@
 
   &__nav {
     @include flex(row, space-between, center);
-    padding: 1rem 0 1rem 0;
-
-    &__logo {
-      cursor: pointer;
-
-      .logo {
-        max-width: 12rem;
-        ;
-      }
-    }
+    padding: 1rem;
 
     &__list {
       display: none;
     }
+  }
 
-    &__menu {
-      display: inline-block;
+  &__logo {
+    cursor: pointer;
+
+    .logo {
+      max-width: 12rem;
     }
+  }
+
+  &__menu {
+    display: inline-block;
   }
 
   &__mobil {
     position: absolute;
-    max-width: 50%;
+    max-width: 70%;
     max-height: 39.5rem;
     object-fit: cover;
-    left: -4%;
+    left: -20%;
     top: 110%;
-
-
-
-
   }
 
   .btn {
-    @include font(1rem, 1.4rem, 700);
+    @include font(1rem, 1.4rem, 700, $col-white);
     padding: 1.2rem 1.6rem;
-    color: $col-white;
-  }
 
+  }
 }
 
 // ************ MEDIA QUERRY ************
@@ -77,7 +64,7 @@
     }
 
     &__nav {
-      padding: 2rem 0 2rem 0;
+      padding: 2rem;
     }
 
     &__header {
@@ -88,7 +75,6 @@
     .logo {
       max-width: 14rem;
     }
-
   }
 }
 
@@ -116,7 +102,7 @@
     }
 
     &__nav {
-      padding: 3rem 0 3rem 0;
+      padding: 3rem;
 
       .logo {
         max-width: 17rem;
@@ -138,7 +124,6 @@
     &__header {
       font-size: 5rem;
       line-height: 6rem;
-      // padding-bottom: 4rem;
     }
 
     &__nav {
@@ -149,7 +134,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 500px) {
   .header {
@@ -162,13 +146,12 @@
     }
 
     &__nav {
-      padding: 3rem 0 3rem 0;
+      padding: 4rem;
     }
 
     .btn-get {
-      @include font(1.4rem, 1.7rem, 700);
+      @include font(1.4rem, 1.7rem, 700, $col-white);
       padding: 1.8rem 2.2rem;
-      color: $col-white;
       margin-bottom: 2rem;
     }
   }
@@ -211,7 +194,7 @@
     }
 
     &__nav {
-      padding: 4rem 0 4rem 0;
+      padding: 5rem;
     }
   }
 }
@@ -228,7 +211,7 @@
     }
 
     &__nav {
-      padding: 5rem 0 5rem 0;
+      padding: 6rem 4rem 6rem 4rem;
 
       .logo {
         max-width: 20rem;
@@ -236,10 +219,8 @@
     }
 
     .btn {
-      @include font(1.6rem, 1.9rem, 700);
+      @include font(1.6rem, 1.9rem, 700, $col-white);
       padding: 2rem 2.4rem;
-      color: $col-white;
-
     }
 
     .btn-get {
@@ -247,7 +228,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 760px) {
 
@@ -295,7 +275,7 @@
 @media screen and (min-width: 900px) {
   .header {
     &__mobil {
-      top: 90%;
+      top: 84%;
     }
 
     &__wrapper {
@@ -311,7 +291,6 @@
     .btn-get {
       margin-bottom: 14rem;
     }
-
   }
 }
 
@@ -320,8 +299,9 @@
     &__nav {
       &__list {
         @include flex(row, space-between, center);
+        max-width: 60rem;
         flex-grow: 1;
-        transform: translateX(4rem);
+
 
         &__items {
           cursor: pointer;
@@ -368,6 +348,15 @@
 
 @media screen and (min-width: 1200px) {
   .header {
+    &__nav {
+      padding: 6rem 4rem 6rem 4rem;
+      max-width: 145rem;
+
+      .logo {
+        max-width: 20rem;
+      }
+    }
+
     &__header {
 
       font-size: 10rem;
@@ -380,14 +369,10 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1450px) {
   .header {
-    &__mobil {
-      top: 84%;
-    }
-
-    &__wrapper {
-      margin: 0 20rem;
+    .btn-get {
+      margin-bottom: 38rem;
     }
   }
 }

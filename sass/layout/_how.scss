@@ -1,0 +1,30 @@
+.main {
+
+  .how {
+    @include flex(column, space-between, center);
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+
+    &__img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main {
+
+    .how {
+      @include flex(row, space-between, center);
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .main {
+
+    .how {
+      max-width: 123rem;
+    }
+  }
+}

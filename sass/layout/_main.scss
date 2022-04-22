@@ -1,21 +1,17 @@
 .main {
-  .about {
-    // @include flex(row, space-between, center);
-    margin: 34rem auto 0 auto;
-    // max-width: 117rem;
-    // max-height: 55rem;
 
-    &__description {
-      @include flex(column, space-between, center);
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
 
-      &__boldtxt {
-        @include flex(row, space-between, center);
+@media screen and (min-width: 850px) {
+  .main {
 
-        .p_bold {
-          background-color: $col-back-100;
-          padding: 3rem, 5.5rem;
-        }
-      }
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 4rem;
     }
   }
 }

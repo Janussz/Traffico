@@ -1,0 +1,179 @@
+.main {
+  .FAQ {
+    position: relative;
+
+    h2 {
+      font-size: 2.7rem;
+      line-height: 4rem;
+    }
+
+    .extension {
+      background: $col-orange-800;
+      opacity: 0.2;
+      margin-bottom: 0;
+    }
+
+    &__heading::after {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      background-color: $col-back-100;
+      width: 122rem;
+      height: 150rem;
+      border-top-left-radius: 11rem;
+      z-index: -1;
+      top: -2rem;
+      right: 0;
+      overflow: hidden;
+    }
+
+    &__heading {
+      &__img {
+        max-width: 92%;
+        margin-top: 4rem;
+      }
+    }
+
+    &__questions {
+      margin-top: 9rem;
+      text-align: start;
+
+      .p_bold {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-right: 1rem;
+      }
+
+      &__list {
+        margin-right: 2rem;
+
+        &-item {
+          margin: 0 auto;
+          background-color: $col-white;
+          max-width: 30rem;
+          height: 8rem;
+          border-radius: 9px;
+          @include flex(row, space-between, center);
+          padding: 1.5rem 1.5rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+
+    .FAQ {
+
+      h2 {
+        font-size: 3rem;
+        line-height: 4.7rem;
+      }
+
+      &__heading {
+        &__content {
+          max-width: 40rem
+        }
+
+        &__img {
+          max-width: 75%;
+        }
+      }
+
+      &__questions {
+
+        .p_bold {
+          font-size: 1.8rem;
+          line-height: 3.3rem;
+        }
+
+        &__list-item {
+          max-width: 45rem;
+          z-index: 1;
+          padding: 2.5rem 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  .main {
+
+    .FAQ {
+
+      h2 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+      }
+
+      &__heading {
+        &__container {
+          max-width: 55rem;
+        }
+      }
+
+      &__questions {
+        @include flex(row, space-between, start);
+
+        .p_bold {
+          font-size: 1.8rem;
+          line-height: 3.3rem;
+        }
+
+
+      }
+    }
+  }
+
+  @media screen and (min-width: 1100px) {
+    .main {
+
+      .FAQ {
+
+        &__heading {
+          @include flex(row, space-between, center)
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .main {
+
+      .FAQ {
+
+        h2 {
+          font-size: 4.8rem;
+          line-height: 6.7rem;
+        }
+
+        &__background {
+          right: -16rem;
+        }
+
+        &__questions {
+
+          &__list-item {
+            max-width: 55rem;
+            height: 9rem;
+
+            z-index: 1;
+            padding: 1.5rem 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .main {
+      .FAQ {
+        max-width: 136rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@mixin font($size, $line, $weight, $font: false) {
+@mixin font($size, $line, $weight, $color: '', $font: false) {
   @if ($font) {
     font-family: $font;
   }
@@ -6,7 +6,9 @@
   font-size: $size;
   line-height: $line;
   font-weight: $weight;
-  color:$col-text;
+  @if ($color) {
+    color: $color;
+  }
 }
 
 @mixin flex($direction, $justify, $align) {

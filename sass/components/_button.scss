@@ -1,12 +1,17 @@
 .btn {
-  @include font(1.6rem, 1.9rem, 700);
+  @include font(1.6rem, 1.9rem, 700, $col-white);
   text-align: center;
   text-transform: uppercase;
   padding: 2rem 2.4rem;
   background-color: $col-orange-800;
-  color: $col-white;
   border: none;
   border-radius: 0.5rem;
   letter-spacing: 0.05em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }

@@ -1,13 +1,112 @@
 .header__mobil {
-  animation: 4s linear 0s alternate truck_move;
+  animation: 6s linear 0s alternate truck_move;
 }
 @keyframes truck_move {
-  from {
-    margin-left: 0%;
+  0% {
+    transform: translateX(-75%);
   }
-  to {
-    margin-left: 120%;
+  50% {
+    transform: translateX(-35%);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .container {
+    padding: 0 6rem;
+  }
+}
+.logo__footer {
+  width: 17rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 2.4rem;
+  background-color: #EE4D47;
+  border: none;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.s__media {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #ED4D47;
+  border: none;
+  border-radius: 1.8rem;
+  fill: #fff;
+}
+.s__media svg {
+  margin: 9px 9px;
+}
+
+.arrow {
+  display: inline-block;
+  text-align: center;
+  font-size: 2.9rem;
+  color: #ED4D47;
+}
+
+.sign {
+  fill: #EE4D47;
+  width: 15px;
+  height: 15px;
+}
+
+.bar {
+  display: inline-block;
+  width: 1rem;
+  height: 18rem;
+  background-color: #EE4D47;
+  border: none;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.input, .input::placeholder {
+  width: 40rem;
+  height: 6rem;
+  padding: 4rem;
+  border: #EE4D47 solid 0.1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  color: "";
+}
+.input:focus, .input::placeholder:focus {
+  border-width: 0.2rem;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: "";
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
 }
 
 * {
@@ -39,42 +138,41 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/font/DMSerifDisplay-Regular.ttf);
+  src: url(./../font/DMSerifDisplay-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/font/Rubik-Light.ttf);
+  src: url(./../font/Rubik-Light.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/font/Rubik-Regular.ttf);
+  src: url(./../font/Rubik-Regular.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/font/Rubik-Medium.ttf);
+  src: url(./../font/Rubik-Medium.ttf);
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/font/Rubik-Bold.ttf);
+  src: url(./../font/Rubik-Bold.ttf);
 }
 h1 {
   font-family: "DM Serif Display";
   font-size: 100px;
   line-height: 100px;
   font-weight: 400;
-  color: #402B2B;
   color: #fff;
 }
 
@@ -90,27 +188,14 @@ h3 {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  color: #402B2B;
-  letter-spacing: 1.1;
   color: #EE4D47;
+  letter-spacing: 1.1;
   text-transform: uppercase;
 }
 
 p {
   font-size: 18px;
   line-height: 40px;
-  font-weight: 300;
-  color: #402B2B;
-}
-p--form {
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 300;
-  color: #402B2B;
-}
-p--footer {
-  font-size: 16px;
-  line-height: 30px;
   font-weight: 300;
   color: #402B2B;
 }
@@ -126,19 +211,25 @@ p--footer {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  color: #402B2B;
+  color: "";
   color: #fff;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.p_question {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #402B2B;
 }
 
 .p_nav {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
-  color: #402B2B;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .p_nav_testi {
@@ -151,105 +242,23 @@ p--footer {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  color: #402B2B;
   color: #fff;
 }
 .p_nav_head {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  color: #402B2B;
   color: #EE4D47;
 }
 
-.logo__footer {
-  width: 17rem;
-}
-
-.btn {
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  font-weight: 700;
-  color: #402B2B;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 2rem 2.4rem;
-  background-color: #EE4D47;
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-}
-
-.s__media {
-  width: 3.6rem;
-  height: 3.6rem;
-  background-color: #ED4D47;
-  border: none;
-  border-radius: 1.8rem;
-  fill: #fff;
-}
-.s__media svg {
-  margin: 9px 9px;
-}
-
-.arrow {
-  display: inline-block;
-  text-align: center;
-  font-size: 2.9rem;
-  color: #ED4D47;
-}
-
-.bar {
-  display: inline-block;
-  width: 1rem;
-  height: 16rem;
-  background-color: #EE4D47;
-  border: 1px solid #000;
-  border-top-left-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
-}
-
-.input, .input::placeholder {
-  width: 40rem;
-  height: 6rem;
-  padding: 4rem;
-  border: #EE4D47 solid 0.1rem;
-  border-radius: 0.5rem;
-  outline: none;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 300;
-  color: #402B2B;
-}
-.input:focus, .input::placeholder:focus {
-  border-width: 0.2rem;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  color: #402B2B;
-  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
-}
-
-.form__content:hover {
-  cursor: pointer;
-}
-
 .header {
+  padding: 1rem 0;
   max-width: 100%;
-  position: relative;
-}
-.header__bg {
-  position: relative;
-  max-width: 128.5rem;
-  max-height: 80rem;
-  background-image: url(/img/Scene.webp);
+  margin: 0 auto;
+  background-image: url(./../img/Scene.webp);
   background-repeat: no-repeat;
   background-size: cover;
-}
-.header__wrapper {
-  margin: 0 2rem;
+  position: relative;
 }
 .header__header {
   font-size: 3.5rem;
@@ -261,35 +270,34 @@ p--footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 0;
-}
-.header__nav__logo {
-  cursor: pointer;
-}
-.header__nav__logo .logo {
-  max-width: 12rem;
+  padding: 1rem;
 }
 .header__nav__list {
   display: none;
 }
-.header__nav__menu {
+.header__logo {
+  cursor: pointer;
+}
+.header__logo .logo {
+  max-width: 12rem;
+}
+.header__menu {
   display: inline-block;
 }
 .header__mobil {
   position: absolute;
-  max-width: 50%;
+  max-width: 70%;
   max-height: 39.5rem;
   object-fit: cover;
-  left: -4%;
+  left: -20%;
   top: 110%;
 }
 .header .btn {
   font-size: 1rem;
   line-height: 1.4rem;
   font-weight: 700;
-  color: #402B2B;
-  padding: 1.2rem 1.6rem;
   color: #fff;
+  padding: 1.2rem 1.6rem;
 }
 
 @media screen and (min-width: 365px) {
@@ -300,7 +308,7 @@ p--footer {
     margin: 0 3rem;
   }
   .header__nav {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem;
   }
   .header__header {
     font-size: 4rem;
@@ -328,7 +336,7 @@ p--footer {
     max-width: 35rem;
   }
   .header__nav {
-    padding: 3rem 0 3rem 0;
+    padding: 3rem;
   }
   .header__nav .logo {
     max-width: 17rem;
@@ -357,15 +365,14 @@ p--footer {
     padding-bottom: 5rem;
   }
   .header__nav {
-    padding: 3rem 0 3rem 0;
+    padding: 4rem;
   }
   .header .btn-get {
     font-size: 1.4rem;
     line-height: 1.7rem;
     font-weight: 700;
-    color: #402B2B;
-    padding: 1.8rem 2.2rem;
     color: #fff;
+    padding: 1.8rem 2.2rem;
     margin-bottom: 2rem;
   }
 }
@@ -394,7 +401,7 @@ p--footer {
     line-height: 6.3rem;
   }
   .header__nav {
-    padding: 4rem 0 4rem 0;
+    padding: 5rem;
   }
 }
 @media screen and (min-width: 720px) {
@@ -405,7 +412,7 @@ p--footer {
     margin: 0 7rem;
   }
   .header__nav {
-    padding: 5rem 0 5rem 0;
+    padding: 6rem 4rem 6rem 4rem;
   }
   .header__nav .logo {
     max-width: 20rem;
@@ -414,9 +421,8 @@ p--footer {
     font-size: 1.6rem;
     line-height: 1.9rem;
     font-weight: 700;
-    color: #402B2B;
-    padding: 2rem 2.4rem;
     color: #fff;
+    padding: 2rem 2.4rem;
   }
   .header .btn-get {
     margin-bottom: 12rem;
@@ -449,7 +455,7 @@ p--footer {
 }
 @media screen and (min-width: 900px) {
   .header__mobil {
-    top: 90%;
+    top: 84%;
   }
   .header__wrapper {
     margin: 0 10rem;
@@ -469,8 +475,8 @@ p--footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 60rem;
     flex-grow: 1;
-    transform: translateX(4rem);
   }
   .header__nav__list__items {
     cursor: pointer;
@@ -500,6 +506,13 @@ p--footer {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header__nav {
+    padding: 6rem 4rem 6rem 4rem;
+    max-width: 145rem;
+  }
+  .header__nav .logo {
+    max-width: 20rem;
+  }
   .header__header {
     font-size: 10rem;
     line-height: 10rem;
@@ -508,34 +521,267 @@ p--footer {
     margin-bottom: 25rem;
   }
 }
-@media screen and (min-width: 1300px) {
-  .header__mobil {
-    top: 84%;
+@media screen and (min-width: 1450px) {
+  .header .btn-get {
+    margin-bottom: 38rem;
   }
-  .header__wrapper {
-    margin: 0 20rem;
+}
+.main h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 850px) {
+  .main h3 {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
   }
 }
 .main .about {
-  margin: 34rem auto 0 auto;
+  padding-top: 20rem;
+}
+.main .about p,
+.main .about .p_bold {
+  font-size: 1.8rem;
 }
 .main .about__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+.main .about__description__text {
+  margin-bottom: 3rem;
 }
 .main .about__description__boldtxt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.main .about__description__boldtxt .p_bold {
   background-color: #FDEDE8;
   padding: 3rem, 5.5rem;
 }
+.main .about__description__img {
+  max-width: 100%;
+  margin-top: 2rem;
+}
 
+@media screen and (min-width: 400px) {
+  .main .about {
+    padding-top: 24rem;
+  }
+  .main .about__description__text {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 450px) {
+  .main .about {
+    padding-top: 26rem;
+  }
+  .main .bar {
+    height: 14rem;
+  }
+  .main__description__text {
+    margin-bottom: 3rem;
+  }
+  .main__description__boldtxt {
+    padding: 2rem, 5.5rem;
+  }
+  .main__description__img {
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .main .about {
+    padding-top: 33rem;
+  }
+  .main .about .bar {
+    height: 14rem;
+  }
+  .main .about__description__text {
+    margin-bottom: 3rem;
+  }
+  .main .about__description__boldtxt {
+    padding: 3rem, 5.5rem;
+  }
+  .main .about__description .p_bold {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .main .about {
+    padding-top: 40rem;
+  }
+  .main .about p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .about .p_bold {
+    margin-left: 2.2rem;
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .main .about {
+    max-width: 117rem;
+  }
+}
+.main .how {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding-top: 4rem;
+}
+.main .how__img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .main .how {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .main .how {
+    max-width: 123rem;
+  }
+}
+.main .FAQ {
+  position: relative;
+}
+.main .FAQ h2 {
+  font-size: 2.7rem;
+  line-height: 4rem;
+}
+.main .FAQ .extension {
+  background: #EE4D47;
+  opacity: 0.2;
+  margin-bottom: 0;
+}
+.main .FAQ__heading::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #FDEDE8;
+  width: 122rem;
+  height: 150rem;
+  border-top-left-radius: 11rem;
+  z-index: -1;
+  top: -2rem;
+  right: 0;
+  overflow: hidden;
+}
+.main .FAQ__heading__img {
+  max-width: 92%;
+  margin-top: 4rem;
+}
+.main .FAQ__questions {
+  margin-top: 9rem;
+  text-align: start;
+}
+.main .FAQ__questions .p_bold {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+}
+.main .FAQ__questions__list {
+  margin-right: 2rem;
+}
+.main .FAQ__questions__list-item {
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 30rem;
+  height: 8rem;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .main .FAQ h2 {
+    font-size: 3rem;
+    line-height: 4.7rem;
+  }
+  .main .FAQ__heading__content {
+    max-width: 40rem;
+  }
+  .main .FAQ__heading__img {
+    max-width: 75%;
+  }
+  .main .FAQ__questions .p_bold {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+  }
+  .main .FAQ__questions__list-item {
+    max-width: 45rem;
+    z-index: 1;
+    padding: 2.5rem 3.5rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .main .FAQ h2 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  .main .FAQ__heading__container {
+    max-width: 55rem;
+  }
+  .main .FAQ__questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .main .FAQ__questions .p_bold {
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+  }
+}
+@media screen and (min-width: 850px) and (min-width: 1100px) {
+  .main .FAQ__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 850px) and (min-width: 1200px) {
+  .main .FAQ h2 {
+    font-size: 4.8rem;
+    line-height: 6.7rem;
+  }
+  .main .FAQ__background {
+    right: -16rem;
+  }
+  .main .FAQ__questions__list-item {
+    max-width: 55rem;
+    height: 9rem;
+    z-index: 1;
+    padding: 1.5rem 3.5rem;
+  }
+}
+@media screen and (min-width: 850px) and (min-width: 1400px) {
+  .main .FAQ {
+    max-width: 136rem;
+  }
+}
 .footer__container {
   display: flex;
   flex-direction: column;
