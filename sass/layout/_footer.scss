@@ -1,7 +1,7 @@
 .footer {
     &__container{
-        @include flex(column, center, center);
-        margin-right: 21rem;
+        @include flex(column, left, center);
+        max-width: 170rem;
     }
     .form {
         width: 100%;
@@ -67,3 +67,4 @@
         }
     }
 }
+

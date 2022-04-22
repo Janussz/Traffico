@@ -211,7 +211,7 @@ p--footer {
   border-bottom-left-radius: 0.4rem;
 }
 
-.input {
+.input, .input::placeholder {
   width: 40rem;
   height: 6rem;
   padding: 4rem;
@@ -223,7 +223,7 @@ p--footer {
   font-weight: 300;
   color: #402B2B;
 }
-.input:focus, .input :not(.input::placeholder) {
+.input:focus, .input::placeholder:focus {
   border-width: 0.2rem;
   font-size: 18px;
   line-height: 40px;
@@ -535,9 +535,9 @@ p--footer {
 .footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin-right: 21rem;
+  max-width: 170rem;
 }
 .footer .form {
   width: 100%;
