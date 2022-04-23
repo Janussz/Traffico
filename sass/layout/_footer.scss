@@ -1,13 +1,15 @@
 .footer {
-    &__container{
+    &__container {
         @include flex(column, left, center);
         max-width: 140rem;
         position: relative;
+
         .truck {
             position: relative;
             align-self: flex-start;
             margin-bottom: -4.2rem;
-            &::before{
+
+            &::before {
                 content: '';
                 background-image: url(../img/truckVB.png);
                 background-repeat: no-repeat;
@@ -18,7 +20,8 @@
                 right: -6rem;
                 bottom: 3rem;
             }
-            &::after{
+
+            &::after {
                 content: '';
                 background-image: url(../img/truckVL.png);
                 background-repeat: no-repeat;
@@ -29,12 +32,13 @@
                 bottom: 0.3rem;
             }
         }
+
         .form {
             width: 100%;
             background-color: $col-back-900;
             border-top-right-radius: 8rem;
-            z-index: -2;
-            &::before{
+
+            &::before {
                 content: '';
                 background-image: url(../img/Vector.png);
                 background-repeat: no-repeat;
@@ -50,29 +54,36 @@
                 margin-bottom: 17rem;
                 max-width: 102.5rem;
             }
+
             &__aside {
                 @include flex(row, center, center);
                 max-width: 38.6rem;
                 margin-top: 11rem;
                 margin-bottom: 8rem;
+
                 .p_nav_foot {
                     max-width: 33rem;
                 }
+
                 .bar {
                     margin-right: 4rem;
                     border: 0px;
                 }
             }
+
             &__box {
                 background-color: $col-white;
-                margin-top: -11rem;
+                // margin-top: -11rem;
+                transform: translateY(-11rem);
                 padding: 5.2rem 7.5rem;
                 border-radius: 1rem;
             }
+
             &__input-wrap {
                 margin-bottom: 3rem;
                 max-width: 40rem;
             }
+
             .btn-arrow {
                 padding-left: 2.4rem;
             }
@@ -93,6 +104,7 @@
         .social {
             width: 100%;
             padding: 5rem 0rem;
+
             &__wrap {
                 max-width: 102.4rem;
                 @include flex(row, space-between, center);

@@ -88,20 +88,22 @@
   border-bottom-left-radius: 0.4rem;
 }
 
-.input, .input::placeholder {
+.input {
   width: 40rem;
-  height: 6rem;
-  padding: 4rem;
+  padding: 1rem 4rem;
+  outline: none;
   border: #EE4D47 solid 0.1rem;
   border-radius: 0.5rem;
-  outline: none;
+}
+.input, .input::placeholder {
   font-size: 18px;
   line-height: 40px;
   font-weight: 300;
   color: "";
 }
-.input:focus, .input::placeholder:focus {
+.input:focus {
   border-width: 0.2rem;
+  padding: 0.9rem 4rem;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
@@ -820,7 +822,6 @@ p {
   width: 100%;
   background-color: #0F264C;
   border-top-right-radius: 8rem;
-  z-index: -2;
 }
 .footer__container .form::before {
   content: "";
@@ -858,7 +859,7 @@ p {
 }
 .footer__container .form__box {
   background-color: #fff;
-  margin-top: -11rem;
+  transform: translateY(-11rem);
   padding: 5.2rem 7.5rem;
   border-radius: 1rem;
 }
