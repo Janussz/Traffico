@@ -1,24 +1,17 @@
 .main {
-
   .about {
     padding-top: 20rem;
-
-    p,
-    .p_bold {
-      font-size: 1.8rem;
-    }
 
     &__description {
       @include flex(column, space-between, flex-start);
 
       &__text {
-        margin-bottom: 3rem;
+        margin: 1rem 0 3rem 0;
       }
 
       &__boldtxt {
         @include flex(row, space-between, center);
         background-color: $col-back-100;
-        padding: 3rem, 5.5rem;
       }
 
       &__img {
@@ -31,14 +24,13 @@
 
 @media screen and (min-width: 400px) {
   .main {
-
     .about {
       padding-top: 24rem;
 
       &__description {
 
         &__text {
-          margin-bottom: 3rem;
+          margin: 2rem 0 3rem 0;
         }
       }
     }
@@ -56,20 +48,14 @@
     }
 
     &__description {
-
       &__text {
-        margin-bottom: 3rem;
-      }
-
-      &__boldtxt {
-        padding: 2rem, 5.5rem;
+        margin: 3rem 0 3rem 0;
       }
 
       &__img {
         margin-top: 4rem;
       }
     }
-
   }
 }
 
@@ -78,23 +64,9 @@
     .about {
       padding-top: 33rem;
 
-      .bar {
-        height: 14rem;
-      }
-
       &__description {
-
         &__text {
-          margin-bottom: 3rem;
-        }
-
-        &__boldtxt {
-          padding: 3rem, 5.5rem;
-        }
-
-        .p_bold {
-          margin-left: 1rem;
-          font-size: 2rem;
+          margin: 4rem 0 4rem 0;
         }
       }
     }
@@ -103,7 +75,6 @@
 
 @media screen and (min-width: 850px) {
   .main {
-
     .about {
       padding-top: 40rem;
 
@@ -116,21 +87,14 @@
 
 @media screen and (min-width: 1100px) {
   .main {
-
     .about {
       @include flex(row, space-between, center);
-
-      .p_bold {
-        margin-left: 2.2rem;
-        font-size: 2.4rem;
-      }
     }
   }
 }
 
 @media screen and (min-width: 1300px) {
   .main {
-
     .about {
       max-width: 117rem;
     }

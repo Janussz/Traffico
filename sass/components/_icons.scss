@@ -8,6 +8,7 @@
 
   svg {
     margin: 9px 9px;
+
   }
 }
 
@@ -18,8 +19,15 @@
   color: $col-orange-700;
 }
 
-.sign {
+.plus,
+.minus {
   fill: $col-orange-800;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 11px;
+}
+
+.menu {
+  width: 3rem;
+  height: 3rem;
+  fill: $col-white;
 }
