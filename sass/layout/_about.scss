@@ -6,7 +6,7 @@
       @include flex(column, space-between, flex-start);
 
       &__text {
-        margin-bottom: 3rem;
+        margin: 1rem 0 3rem 0;
       }
 
       &__boldtxt {
@@ -30,7 +30,7 @@
       &__description {
 
         &__text {
-          margin-bottom: 3rem;
+          margin: 2rem 0 3rem 0;
         }
       }
     }
@@ -49,7 +49,7 @@
 
     &__description {
       &__text {
-        margin-bottom: 3rem;
+        margin: 3rem 0 3rem 0;
       }
 
       &__img {
@@ -64,13 +64,9 @@
     .about {
       padding-top: 33rem;
 
-      .bar {
-        height: 14rem;
-      }
-
       &__description {
         &__text {
-          margin-bottom: 3rem;
+          margin: 4rem 0 4rem 0;
         }
       }
     }
