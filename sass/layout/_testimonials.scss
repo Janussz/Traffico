@@ -1,0 +1,62 @@
+.testimonials {
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+
+    &__container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    &__heading {
+        .h2 {
+            max-width: 30rem;
+        }
+    }
+
+    &__cards {
+        &__nav {
+            margin-bottom: 4rem;
+        }
+
+        &__items {
+            @include flex (row, center, center);
+            max-width: 42rem;
+
+
+            .card~.card {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials {
+
+        &__container {
+            @include flex (row, left, flex-start);
+        }
+
+        &__cards {
+
+            &__items {
+                @include flex (row, center, center);
+                max-width: 42rem;
+                flex-wrap: wrap;
+
+
+                .card~.card {
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .testimonials {
+        &__container {
+            max-width: 1240rem;
+        }
+    }
+}
