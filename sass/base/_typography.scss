@@ -38,6 +38,10 @@ p {
 
   &_testi {
     @include font(16px, 30px, 300, $col-text);
+
+    &--bold {
+      font-weight: 700;
+    }
   }
 
   &_foot {

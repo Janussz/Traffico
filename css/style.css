@@ -111,6 +111,33 @@
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
 }
 
+.card {
+  max-width: 42rem;
+  height: 36rem;
+  padding: 3rem 3rem 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+.card__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.card__user__img {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .card {
+    padding: 6rem 5rem 4rem;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -239,6 +266,9 @@ p {
   line-height: 30px;
   font-weight: 300;
   color: #402B2B;
+}
+.p_nav_testi--bold {
+  font-weight: 700;
 }
 .p_nav_foot {
   font-size: 20px;
@@ -782,6 +812,55 @@ p {
 @media screen and (min-width: 850px) and (min-width: 1400px) {
   .main .FAQ {
     max-width: 136rem;
+  }
+}
+.testimonials {
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+}
+.testimonials__container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.testimonials__heading .h2 {
+  max-width: 30rem;
+}
+.testimonials__cards__nav {
+  margin-bottom: 4rem;
+}
+.testimonials__cards__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 42rem;
+}
+.testimonials__cards__items .card ~ .card {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .testimonials__cards__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 42rem;
+    flex-wrap: wrap;
+  }
+  .testimonials__cards__items .card ~ .card {
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .testimonials__container {
+    max-width: 1240rem;
   }
 }
 .footer__container {
